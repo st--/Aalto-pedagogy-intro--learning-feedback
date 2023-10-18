@@ -1,0 +1,58 @@
+:: StoryTitle
+How to give feedback
+
+
+:: StoryData
+{
+  "ifid": "26F6BC40-D61F-4F10-932E-B8E2143056A3",
+  "format": "Harlowe",
+  "format-version": "3.3.7",
+  "start": "Intro",
+  "zoom": 1
+}
+
+
+:: "I can't focus on my work, there's so much to do" {"position":"600,700","size":"100,100"}
+(Student needs structure)
+
+
+:: "I've completed my homework now, what else should I do?" {"position":"200,700","size":"100,100"}
+This seems to be a student who is motivated, enthusiastic and has good study skills.
+
+[[Help the student to learn self-reflection]]
+
+[[
+
+
+:: "This is all so boring" {"position":"1000,700","size":"100,100"}
+(Student needs motivation)
+
+
+:: "What do you think you're doing well? Where do you think you could still improve?" {"position":"200,950","size":"100,100"}
+
+Challenge the learner to discover improvement areas: Simply 'telling' students whats right or wrong will not enhance learning. Feedback should prompt students to reflect on their own process.
+
+
+:: A student knocks on your open office door. {"position":"200,500","size":"100,100"}
+One of your students, has come to meet you for feedback on their course task. As you prepare to provide guidance, you consider student needs and motivation.
+
+The student says ...
+[["I've completed my homework now, what else should I do?"]]
+
+[["I can't focus on my work, there's so much to do"]]
+
+[["This is all so boring"]]
+
+
+:: Help the student to learn self-reflection {"position":"200,825","size":"100,100"}
+Learning self-reflection: Students should acquire skills to identify and frame problems within their own processes of thinking, not only how to solve externally sourced problems.
+
+[["What do you think you're doing well? Where do you think you could still improve?"]]
+
+
+
+:: Intro {"position":"325,375","size":"100,100"}
+You are teacher who values student growth and success.
+
+[[A student knocks on your open office door.]]
+
