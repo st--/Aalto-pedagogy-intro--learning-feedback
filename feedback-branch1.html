@@ -12,22 +12,52 @@
 <tw-storydata name="How to give feedback" startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="26F6BC40-D61F-4F10-932E-B8E2143056A3" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="325,375" size="100,100">You are teacher who values student growth and success.
 
 [[A student knocks on your open office door.]]
-</tw-passagedata><tw-passagedata pid="2" name="A student knocks on your open office door." tags="" position="200,500" size="100,100">One of your students, has come to meet you for feedback on their course task. As you prepare to provide guidance, you consider student needs and motivation.
+</tw-passagedata><tw-passagedata pid="2" name="A student knocks on your open office door." tags="" position="175,475" size="100,100">One of your students has come to meet you for feedback on their course task. As you prepare to provide guidance, you consider student needs and motivation.
 
 The student says ...
-[[&quot;I&#39;ve completed my homework now, what else should I do?&quot;]]
+[[&quot;I&#39;ve completed my homework already, but I really want to do more, what can I do?&quot;|motivated+good]]
 
 [[&quot;I can&#39;t focus on my work, there&#39;s so much to do&quot;]]
 
-[[&quot;This is all so boring&quot;]]</tw-passagedata><tw-passagedata pid="3" name="&quot;I can&#39;t focus on my work, there&#39;s so much to do&quot;" tags="" position="600,700" size="100,100">(Student needs structure)</tw-passagedata><tw-passagedata pid="4" name="&quot;This is all so boring&quot;" tags="" position="1000,700" size="100,100">(Student needs motivation)</tw-passagedata><tw-passagedata pid="5" name="&quot;I&#39;ve completed my homework now, what else should I do?&quot;" tags="" position="200,700" size="100,100">This seems to be a student who is motivated, enthusiastic and has good study skills.
+[[&quot;This is all so boring&quot;]]</tw-passagedata><tw-passagedata pid="3" name="&quot;I can&#39;t focus on my work, there&#39;s so much to do&quot;" tags="" position="600,700" size="100,100">(Student needs structure)</tw-passagedata><tw-passagedata pid="4" name="&quot;This is all so boring&quot;" tags="" position="1000,700" size="100,100">(Student needs motivation)</tw-passagedata><tw-passagedata pid="5" name="motivated+good" tags="" position="200,700" size="100,100">This seems to be a student who is motivated, enthusiastic and has good study skills.
 
-[[Help the student to learn self-reflection]]
+You probably want to use a facilitative style of feedback.
 
-[[</tw-passagedata><tw-passagedata pid="6" name="Help the student to learn self-reflection" tags="" position="200,825" size="100,100">Learning self-reflection: Students should acquire skills to identify and frame problems within their own processes of thinking, not only how to solve externally sourced problems.
+(unless: $branch1demanding&gt;0)[ [[Encourage the student to take on more demanding tasks]] ]
+
+(unless: $branch1reflect&gt;0)[ [[Help the student to learn self-reflection]] ]
+
+(unless: $branch1goals&gt;0)[ [[Get the student to understand their own goals in their learning process]] ]
+
+(if: $branch1demanding&gt;0 and $branch1reflect&gt;0 and $branch1goals&gt;0)[ [[Remember...]] ]
+</tw-passagedata><tw-passagedata pid="6" name="Help the student to learn self-reflection" tags="" position="150,850" size="100,100">(set: $branch1reflect to 1)
+
+Learning self-reflection: Students should acquire skills to identify and frame problems within their own processes of thinking, not only how to solve externally sourced problems.
 
 [[&quot;What do you think you&#39;re doing well? Where do you think you could still improve?&quot;]]
-</tw-passagedata><tw-passagedata pid="7" name="&quot;What do you think you&#39;re doing well? Where do you think you could still improve?&quot;" tags="" position="200,950" size="100,100">
-Challenge the learner to discover improvement areas: Simply &#39;telling&#39; students whats right or wrong will not enhance learning. Feedback should prompt students to reflect on their own process.</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="7" name="&quot;What do you think you&#39;re doing well? Where do you think you could still improve?&quot;" tags="" position="225,975" size="100,100">By asking open-ended questions, you encourage the student to reflect on their work.
+
+You challenge the learner to discover improvement areas: Simply &#39;telling&#39; students what&#39;s right or wrong will not enhance learning. Feedback should prompt students to reflect on their own process.
+
+[[Try out some other feedback approaches|motivated+good]]
+</tw-passagedata><tw-passagedata pid="8" name="Encourage the student to take on more demanding tasks" tags="" position="25,850" size="100,100">(set: $branch1demanding to 1)
+
+You try to open up new angles to the work by exploratory, provocative and critical discussion with the aim to get most out of the learner.
+
+[[Try out some other feedback approaches|motivated+good]]
+</tw-passagedata><tw-passagedata pid="9" name="Get the student to understand their own goals in their learning process" tags="" position="300,850" size="100,100">(set: $branch1goals to 1)
+
+You help the student to narrowing down their own focus to deepen professional skills.
+
+[[Try out some other feedback approaches|motivated+good]]
+</tw-passagedata><tw-passagedata pid="10" name="Remember..." tags="" position="475,1075" size="100,100">
+* Don’t overwhelm student with too much feedback: effective feedback is targeted and  concise.
+
+* Align feedback with the intended learning outcomes.
+
+* Guide the learner to reflect and self-assess.
+
+&#39;&#39;Effective feedback is a partnership&#39;&#39;; it requires actions by the student as well as the teacher.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
