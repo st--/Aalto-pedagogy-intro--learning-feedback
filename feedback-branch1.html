@@ -23,13 +23,16 @@ The student says ...
 
 You probably want to use a facilitative style of feedback.
 
-(unless: $branch1demanding&gt;0)[ [[Encourage the student to take on more demanding tasks]] ]
+(set: $branch1demanding to (visited: &quot;Encourage the student to take on more demanding tasks&quot;))
+(unless: $branch1demanding)[ [[Encourage the student to take on more demanding tasks]] ]
 
-(unless: $branch1reflect&gt;0)[ [[Help the student to learn self-reflection]] ]
+(set: $branch1reflect to (visited: &quot;Help the student to learn self-reflection&quot;))
+(unless: $branch1reflect)[ [[Help the student to learn self-reflection]] ]
 
-(unless: $branch1goals&gt;0)[ [[Get the student to understand their own goals in their learning process]] ]
+(set: $branch1goals to (visited: &quot;Get the student to understand their own goals in their learning process&quot;))
+(unless: $branch1goals)[ [[Get the student to understand their own goals in their learning process]] ]
 
-(if: $branch1demanding&gt;0 and $branch1reflect&gt;0 and $branch1goals&gt;0)[ [[Remember...]] ]
+(if: $branch1demanding and $branch1reflect and $branch1goals)[ [[Remember...]] ]
 </tw-passagedata><tw-passagedata pid="6" name="Help the student to learn self-reflection" tags="" position="150,850" size="100,100">(set: $branch1reflect to 1)
 
 Learning self-reflection: Students should acquire skills to identify and frame problems within their own processes of thinking, not only how to solve externally sourced problems.

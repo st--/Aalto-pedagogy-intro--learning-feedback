@@ -90,11 +90,14 @@ This seems to be a student who is motivated, enthusiastic and has good study ski
 
 You probably want to use a facilitative style of feedback.
 
-(unless: $branch1demanding>0)[ [[Encourage the student to take on more demanding tasks]] ]
+(set: $branch1demanding to (visited: "Encourage the student to take on more demanding tasks"))
+(unless: $branch1demanding)[ [[Encourage the student to take on more demanding tasks]] ]
 
-(unless: $branch1reflect>0)[ [[Help the student to learn self-reflection]] ]
+(set: $branch1reflect to (visited: "Help the student to learn self-reflection"))
+(unless: $branch1reflect)[ [[Help the student to learn self-reflection]] ]
 
-(unless: $branch1goals>0)[ [[Get the student to understand their own goals in their learning process]] ]
+(set: $branch1goals to (visited: "Get the student to understand their own goals in their learning process"))
+(unless: $branch1goals)[ [[Get the student to understand their own goals in their learning process]] ]
 
-(if: $branch1demanding>0 and $branch1reflect>0 and $branch1goals>0)[ [[Remember...]] ]
+(if: $branch1demanding and $branch1reflect and $branch1goals)[ [[Remember...]] ]
 
